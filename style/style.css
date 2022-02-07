@@ -5,5 +5,13 @@ body {
     margin: 10px;
     height: 100vh;
     border: 1px solid black;
+}
 
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 15px;
+    background-color: chartreuse;
 }
