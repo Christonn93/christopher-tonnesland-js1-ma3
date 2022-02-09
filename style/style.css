@@ -4,7 +4,6 @@ body {
     margin: 0;
     margin: 10px;
     height: 100vh;
-    border: 1px solid black;
 }
 
 .container {
@@ -13,13 +12,15 @@ body {
     flex-wrap: wrap;
     flex: 1;
     padding: 15px;
-    background-color: chartreuse;
+    box-sizing: border-box;
 }
 
 .game-card {
-    background-color: white;
     padding: 15px;
     margin: 15px;
+    width: 250px;
+    border: .15em solid gray;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .ratio-box {
@@ -37,17 +38,4 @@ body {
     top: 0;
 }
 
-ul {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex: 1;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
 
-
-li {
-    display: inline-flex;
-}
