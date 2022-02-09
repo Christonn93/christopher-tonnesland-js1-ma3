@@ -16,9 +16,10 @@ body {
     background-color: chartreuse;
 }
 
-.game_card {
+.game-card {
     background-color: white;
     padding: 15px;
+    margin: 15px;
 }
 
 .ratio-box {
