@@ -11,16 +11,11 @@ The loading SVG is not my work.
 ## Filter to remove not friendly content
 
 The image i wanted to remove is on the game called "Play with gwen"
-I have added a [image]() that displays the tags that the game is having.
+I have added a [image](unknown.png) that displays the tags that the game is having.
 
+This filter only got the display for the ID of the game that is nsfw. After that i did not get what to do
 
 ```js
-/* 
-
-This filter only got the display for the ID of the game that is nsfw. 
-After that i did not get what to do
-
-*/
 let blockList = [];
     for (let i = 0; i < games.length; i++) {
       const tags = games[i].tags;
@@ -37,14 +32,11 @@ let blockList = [];
     console.log(blockList);
 ```
 
-```js
-/* 
-
-This filtering i got from Oliver. 
+This filtering i got from Oliver.
 I did not understand how to include it in the function to make it work.
-I worked on it, asked around but i still did not understand how to implement it into my code. 
+I worked on it, asked around but i still did not understand how to implement it into my code.
 
-*/
+```js
 const games = await getGames();
 
 const filteredGames = games.filter(function(game) {
@@ -60,14 +52,11 @@ const filteredGames = games.filter(function(game) {
 
 ```
 
-```js
-/*
-
-I received this code from a classmate Jonne Martin(discord: mordiinthehouse#9504). 
+I received this code from a classmate Jonne Martin(discord: mordiinthehouse#9504).
 I don't understand 100% what it does but i wanted the images to show,
-so i did end up including it in the final delivery. 
+so i did end up including it in the final delivery.
 
-*/
+```js
     gameObject = gameObject.filter(function(id){
         return id.id !== 388568;
       }) 
