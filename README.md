@@ -1,4 +1,4 @@
-# christopher-tonnesland-js1-ma3
+# Readme
 
 ## Loading svg copied from here
 
@@ -15,6 +15,8 @@ I have added a [image](unknown.png) that displays the tags that the game is havi
 And i added the [image](nsfw.png) that i wanted to remove.
 
 This filter only got the display for the ID of the game that is nsfw. After that i did not get what to do
+
+***
 
 ```js
 let blockList = [];
@@ -37,6 +39,8 @@ This filtering i got from Oliver.
 I did not understand how to include it in the function to make it work.
 I worked on it, asked around but i still did not understand how to implement it into my code.
 
+***
+
 ```js
 const games = await getGames();
 
@@ -56,6 +60,8 @@ const filteredGames = games.filter(function(game) {
 I received this code from a classmate Jonne Martin(discord: mordiinthehouse#9504).
 I don't understand 100% what it does but i wanted the images to show,
 so i did end up including it in the final delivery.
+
+***
 
 ```js
     gameObject = gameObject.filter(function(id){
