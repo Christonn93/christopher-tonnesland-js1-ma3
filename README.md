@@ -56,7 +56,6 @@ const filteredGames = games.filter(function(game) {
     return true; // Include it
   }
 })
-
 ```
 
 ***
@@ -70,6 +69,3 @@ so i did end up including it in the final delivery.
         return id.id !== 388568;
       }) 
 ```
-
-***
-
