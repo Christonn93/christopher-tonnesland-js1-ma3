@@ -12,6 +12,7 @@ The loading SVG is not my work.
 
 The image i wanted to remove is on the game called "Play with gwen"
 I have added a [image](unknown.png) that displays the tags that the game is having.
+And i added the [image](nsfw.png) that i wanted to remove.
 
 This filter only got the display for the ID of the game that is nsfw. After that i did not get what to do
 
