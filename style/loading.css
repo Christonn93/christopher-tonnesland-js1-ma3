@@ -1,20 +1,24 @@
-html { background: #333 }
+html {
+    background-color: #80A7C8;
+}
 
 .loading {
     display: inline-flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     flex: 1;
 
     justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
 }
-
 
 svg {
 	max-width: 25em;
 	border-radius: 3px;
 	box-shadow: 2px 2px 5px #000;
-	background: #111;
+	background: #1B1E2E;
 	fill: none;
 	stroke: #222;
 	stroke-linecap: round;
@@ -22,7 +26,7 @@ svg {
 }
 
 use {
-	stroke: #fff;
+	stroke: #191970;
 	animation: a 2s linear infinite
 }
 
