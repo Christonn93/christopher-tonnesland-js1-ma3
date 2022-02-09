@@ -15,36 +15,40 @@ setTimeout(() => {
 
     const games = await gameObject;
 
-    const gameFilter = games.filter(function (game) {
-      if (!gameObject.rating) {
-        // Game has no rating
-        return false; // Exclude it
-      } else if (gameObject.rating.id === 388568) {
-        return false; // Exclude it
-      } else {
-        return true; // Include it
-      }
-    });
+    let blockList = [];
+    for (let i = 0; i < games.length; i++) {
+      const tags = games[i].tags;
+
+      tags.forEach((tag) => {
+        if (tag.name.toLowerCase() === "nsfw") {
+          console.log(games[i].id);
+          blockList.push({ id: games[i].id });
+        }
+      });
+    }
+    console.log(blockList);
 
     for (var i = 0; i < gameObject.length; i++) {
-/*     if(i === 8){
-     break;
-    } */
+      if (i === 8) {
+        break;
+      }
       const gameName = gameObject[i].name;
       const gameRate = gameObject[i].rating;
       const gameTags = gameObject[i].tags.length;
-      const gameImage = gameObject[i].background_image;
+      const gameImage = "https://via.placeholder.com/500x500?text=Image+not+found"; /* gameObject[i].background_image; */
+      const gameID = gameObject[i].id;
 
       apiResult.innerHTML += `
-  <div class="game-card">
-  <div class="ratio-box">
-  <img src="${gameImage}" class="image" alt="image missing" />
-  </div>
-  <h3> ${gameName} </h3>
-  <p>Rating: ${gameRate} </p>
-  <p>Tags: ${gameTags} </p>
-  </div>
-`;
+    <div class="game-card">
+    <div class="ratio-box">
+    <img src="${gameImage}" class="image" alt="image missing" />
+    </div>
+    <h3 class="game-title"> ${gameName} </h3>
+    <p>Rating: ${gameRate} </p>
+    <p>Tags: ${gameTags} </p>
+    <a class="cta-btn">Read more</a>
+    </div>
+  `;
     }
   }
   getGame();

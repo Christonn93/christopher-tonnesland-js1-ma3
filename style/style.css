@@ -1,9 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&display=swap');
+
 body {
     padding: 0;
     padding: 10px;
     margin: 0;
     margin: 10px;
     height: 100vh;
+    background-color: #80A7C8;
+}
+
+h3 {
+    font-family: 'Rowdies', cursive;
+    font-weight: 300;
+    font-size: 22px;
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    color: #FFFFFF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .container {
@@ -11,15 +38,15 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     flex: 1;
-    padding: 15px;
+    justify-content: center;
     box-sizing: border-box;
 }
 
 .game-card {
     padding: 15px;
     margin: 15px;
-    width: 250px;
-    border: .15em solid gray;
+    width: 350px;
+    background-color: #1B1E2E;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
@@ -38,4 +65,29 @@ body {
     top: 0;
 }
 
+.cta-btn {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 1em;
+    background-color: #191970;
+    border: .15em solid #FFFFFF;
+    color: #FFFFFF;
+}
 
+.cta-btn:hover{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: .15em solid #C84A57;
+    color: #C84A57;
+}
+
+.image,
+.game-title:hover {
+    cursor: pointer;
+    color: #C84A57;
+}
