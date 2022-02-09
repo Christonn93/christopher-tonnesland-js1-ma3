@@ -27,6 +27,9 @@ setTimeout(() => {
     });
 
     for (var i = 0; i < gameObject.length; i++) {
+/*     if(i === 8){
+     break;
+    } */
       const gameName = gameObject[i].name;
       const gameRate = gameObject[i].rating;
       const gameTags = gameObject[i].tags.length;
