@@ -15,8 +15,13 @@ I have added a [image]() that displays the tags that the game is having.
 
 
 ```js
-// This filter only got the display for the ID of the game that is nsfw. After that i did not get what to do
-    let blockList = [];
+/* 
+
+This filter only got the display for the ID of the game that is nsfw. 
+After that i did not get what to do
+
+*/
+let blockList = [];
     for (let i = 0; i < games.length; i++) {
       const tags = games[i].tags;
 
@@ -35,8 +40,9 @@ I have added a [image]() that displays the tags that the game is having.
 ```js
 /* 
 
-This filtering i got from Oliver. I did not understand how to include it in the function to make it work.
- I worked on it, asked around but i still did not understand how to implement it into my code. 
+This filtering i got from Oliver. 
+I did not understand how to include it in the function to make it work.
+I worked on it, asked around but i still did not understand how to implement it into my code. 
 
 */
 const games = await getGames();
@@ -56,8 +62,11 @@ const filteredGames = games.filter(function(game) {
 
 ```js
 /*
+
 I received this code from a classmate Jonne Martin(discord: mordiinthehouse#9504). 
-I don't understand 100% what it does but i wanted the images to show so i did end up including it in the final delivery. 
+I don't understand 100% what it does but i wanted the images to show,
+so i did end up including it in the final delivery. 
+
 */
     gameObject = gameObject.filter(function(id){
         return id.id !== 388568;
