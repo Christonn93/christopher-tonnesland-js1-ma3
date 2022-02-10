@@ -31,6 +31,8 @@ setTimeout(() => {
     const result = await responds.json();
 
     let gameObject = result.results;
+      console.log(gameObject);
+
 
     // Read about this filtering in the included Readme file.
     gameObject = gameObject.filter(function(id){
@@ -44,6 +46,7 @@ setTimeout(() => {
       const gameName = gameObject[i].name;
       const gameRate = gameObject[i].rating;
       const gameTags = gameObject[i].tags.length;
+      const gameRelease = gameObject[i].released;
       const gameImage = gameObject[i].background_image; // "https://via.placeholder.com/500x500?text=Image+not+found";  
       // I wanted to include the images for the games but due to not friendly content. I tried to find a filter to add to remove the not friendly content. You can read more about it in the included Readme file.
 
@@ -54,10 +57,11 @@ setTimeout(() => {
           <div class="ratio-box">
           <img src="${gameImage}" class="image" alt="image missing" />
           </div>
-          <h3 class="game-title"> ${gameName} </h3>
+          <h3 class="game-title"> <a href="../pages/gamepage.html" class="game-title">${gameName}</a></h3>
+          <p>Release date: ${gameRelease}</p>
           <p>Rating: ${gameRate} </p>
           <p>Tags: ${gameTags} </p>
-          <a class="cta-btn">Read more</a>
+          <a class="cta-btn" href="../pages/gamepage.html">Read more</a>
           </div>`;
 
     }
