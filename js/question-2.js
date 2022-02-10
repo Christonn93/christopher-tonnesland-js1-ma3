@@ -5,6 +5,15 @@ const URL = corsUrl + gameUrl;
 
 const apiResult = document.querySelector("#apiResult");
 
+const error = `
+<div class="error">
+<h3>We are sorry</h3>
+<p>Looks like something went wrong with the server. Please reload the page</p>
+<p>Error code: <u>cx85-gtr-4512d6-69</u></p>
+<p>If the error continues, please contact customer service at: <u>555-333-569</u></p>
+</div>
+`;
+
 // This loader SVG is not mine. I have copied it from codepen. Link to the creator is located in the Readme file. 
 const loadingContainer = document.querySelector(".loading");
 loadingContainer.innerHTML += `
@@ -16,6 +25,7 @@ loadingContainer.innerHTML += `
 
 setTimeout(() => {
   async function getGame() {
+    try {
     const responds = await fetch(URL);
 
     const result = await responds.json();
@@ -51,6 +61,12 @@ setTimeout(() => {
           </div>`;
 
     }
+
+
+} catch (gameObject) {
+  loadingContainer.innerHTML = error;
+}
   }
-  getGame();
-}, 3000);
+  getGame(); 
+}, 2000);
+

@@ -69,3 +69,8 @@ so i did end up including it in the final delivery.
         return id.id !== 388568;
       }) 
 ```
+
+## Design
+
+I thought that the page look a little bland with just the output in a list. I decided to make it a bit more visual pleasing.
+I found [this](http://colormind.io/bootstrap/) website to create the pallet i used for the page. Its a tool i will continue to use.
